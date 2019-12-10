@@ -1,0 +1,5 @@
+setting里Build下的Build Tools下的Maven
+1：Maven home directory改为自己的Maven
+2：User settings file改为自己的Maven对应的settings.xml
+3：Local repository改为自己的Maven目录下的repository，也就是自己的仓库
+4：配置Maven时jdk的路径要与下载时界面的路径一致，而不是你那个jdk的位置（被坑了好久）
