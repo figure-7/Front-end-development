@@ -1,0 +1,4 @@
+在public class MyErrorAttributes extends DefaultErrorAttributes中添加如下方法：
+public MyErrorAttributes() {
+        super(true);
+    }
