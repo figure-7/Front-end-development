@@ -5,3 +5,4 @@ Ctrl+N查找
 Shift+F6文件改名
 Ctrl+G快速跳转到对应数字的行
 Ctrl+O快速重写方法
+Ctrl+H打开类表
