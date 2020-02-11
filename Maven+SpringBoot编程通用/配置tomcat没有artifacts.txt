@@ -1,0 +1,2 @@
+在项目左上File->Project Structure->Artifacts->'+'号->Web Application: Exploded->From Modlues...然后apply
+之后再配置服务器是加上VM-opinion后在Deployment里选'+'号就有添加Artifacts选项了，加上即可
