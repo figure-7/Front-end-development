@@ -1,3 +1,0 @@
-spring boot 报错 nested exception is java.lang.NoClassDefFoundError: javax/el/ELManager
-
-解决办法为:删除tomcat目录下面 lib文件中的el-api.jar文件，重启服务即可。
