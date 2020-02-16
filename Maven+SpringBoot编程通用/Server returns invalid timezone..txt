@@ -1,0 +1,2 @@
+配置SQL中出现 Server returns invalid timezone.  Go to 'Advanced' tab and set 'serverTimezone' property manually. BUG
+将Driver中版本更换即可

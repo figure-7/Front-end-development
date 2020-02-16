@@ -1,0 +1,2 @@
+no data sources are configured...BUG
+直接在右侧datasource栏手动连接数据库即可
