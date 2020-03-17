@@ -7,3 +7,4 @@ Ctrl+G快速跳转到对应数字的行
 Ctrl+O快速重写方法
 Ctrl+H打开类表
 Ctrl+Alt+T快速插入模块（try-catch等）
+Ctrl+P查看可插入数据类型
