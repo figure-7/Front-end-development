@@ -1,0 +1,2 @@
+配置git的bin的环境变量，然后重启IDEA即可
+详见：https://blog.csdn.net/qq_32834005/article/details/104078384
