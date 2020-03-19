@@ -8,3 +8,4 @@ Ctrl+O快速重写方法
 Ctrl+H打开类表
 Ctrl+Alt+T快速插入模块（try-catch等）
 Ctrl+P查看可插入数据类型
+Ctrl+Shift+F12快速调整区域
