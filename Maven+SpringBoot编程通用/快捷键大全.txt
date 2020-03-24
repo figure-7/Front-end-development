@@ -1,11 +1,13 @@
 Ctrl+鼠标左键进入对应子文件
 Ctrl+/选中区域注释
-Alt+insert添加gettersetter方法等等方法（也就是右侧数字1对应的键，注意要把numLock关闭）
 Ctrl+N查找
-Shift+F6文件改名
 Ctrl+G快速跳转到对应数字的行
 Ctrl+O快速重写方法
 Ctrl+H打开类表
-Ctrl+Alt+T快速插入模块（try-catch等）
 Ctrl+P查看可插入数据类型
+Shift+F6文件改名
+Shift+回车自动换行把光标移到最前面
+Alt+insert添加gettersetter方法等等方法（也就是右侧数字1对应的键，注意要把numLock关闭）
+Ctrl+Alt+T快速插入模块（try-catch等）
+Ctrl+Alt+V快速创建外部变量（try-catch等）
 Ctrl+Shift+F12快速调整区域
