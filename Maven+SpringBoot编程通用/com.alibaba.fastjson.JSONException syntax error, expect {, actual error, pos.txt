@@ -1,0 +1,5 @@
+原因在与传递JSON的格式不对，使用JSONArray.toJSONString（）方法即可：
+Response response = client.newCall(request).execute();
+String string = JSONArray.toJSONString(response.body());
+GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
+return githubUser;
