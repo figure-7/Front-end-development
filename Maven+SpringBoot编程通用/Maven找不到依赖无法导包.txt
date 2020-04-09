@@ -1,0 +1,12 @@
+1.先取网上下载对应jar包
+2.把下载的jar包放到项目File->settings->Build,Execution,Deployment->Build Tools->Maven的Local respository路径文件夹内
+文件夹内的位置，例如：
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.12</version>
+    <scope>provided</scope>
+</dependency>
+则把jar包放入的文件夹位置为respository->org->projectlombok->1.18.12里
+然后像上面一样再pom里导入依赖后重启项目就会自动下载了，然后成功
+（这BUG就离谱，咋能不识别呢，视频里和网上都是识别的就没出现这错误，服了）
