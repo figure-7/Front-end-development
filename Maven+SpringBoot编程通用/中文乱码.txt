@@ -1,0 +1,2 @@
+注意IDEA里Settings->Editor->File Encodings的Global Encoding和Project Encoding以及Default encoding for properties files是不是UTF8
+而且要去Navicat右键对应表格选择设计表里确认对应项字符集是不是UTF8，排序规则选择utf8_general_ci
