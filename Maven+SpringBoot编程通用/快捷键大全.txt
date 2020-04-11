@@ -13,3 +13,4 @@ Ctrl+Alt+T快速插入模块（try-catch等）
 Ctrl+Alt+V快速创建外部变量（try-catch等）
 Ctrl+Alt+O自动移除无用头文件
 Ctrl+Shift+F12快速调整区域
+Ctrl+Shift+Alt+？设置IDEA配置（自动热部署等）
