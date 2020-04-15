@@ -1,0 +1,3 @@
+先进行git status获取状态
+然后git commit -m "XXX"XXX为备注，此时存入缓存
+最后git push扔到GitHub上即可（在此之前也可以进行git status查看状态）
