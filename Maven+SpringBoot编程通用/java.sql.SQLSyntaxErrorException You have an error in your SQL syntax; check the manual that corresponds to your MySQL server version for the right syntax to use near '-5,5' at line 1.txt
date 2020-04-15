@@ -1,0 +1,2 @@
+ java.sql.SQLSyntaxErrorException You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1：
+可以注意到显示SQL语句错误，是因为值传了-5,5，所以不能为负值报了错。
