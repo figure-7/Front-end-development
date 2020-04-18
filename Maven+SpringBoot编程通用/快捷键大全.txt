@@ -6,6 +6,7 @@ Ctrl+G快速跳转到对应数字的行
 Ctrl+O快速重写方法
 Ctrl+H打开类表
 Ctrl+P查看可插入数据类型
+Ctrl+D复制该行写入到下一行
 Shift+F6文件改名
 Shift+回车自动换行把光标移到最前面
 Alt+insert添加gettersetter方法等等方法（也就是右侧数字1对应的键，注意要把numLock关闭）
@@ -14,3 +15,4 @@ Ctrl+Alt+V快速创建外部变量（try-catch等）
 Ctrl+Alt+O自动移除无用头文件
 Ctrl+Shift+F12快速调整区域
 Ctrl+Shift+Alt+？设置IDEA配置（自动热部署等）
+Ctrl+Shift+上下键对应行上下移动
