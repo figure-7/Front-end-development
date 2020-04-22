@@ -6,6 +6,7 @@ Ctrl+G快速跳转到对应数字的行
 Ctrl+O快速重写方法
 Ctrl+H打开类表
 Ctrl+P查看可插入数据类型
+Ctrl+F浏览器搜索
 Ctrl+D复制该行写入到下一行
 Shift+F6文件改名
 Shift+回车自动换行把光标移到最前面
