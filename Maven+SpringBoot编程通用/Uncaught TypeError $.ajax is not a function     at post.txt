@@ -1,0 +1,3 @@
+导入<script src="/js/jquery-3.4.1.min.js"></script>
+不要用带slim的
+然后clean项目重启
