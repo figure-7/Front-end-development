@@ -1,0 +1,3 @@
+选择file→project structure→modules里
+右边选择sources然后点击对应的父目录即可编译为对应文件格式
+（类似java文件）
