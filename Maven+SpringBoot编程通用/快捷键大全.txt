@@ -21,6 +21,8 @@ Ctrl+Alt+O自动移除无用头文件
 Ctrl+Alt+S打开setting
 Ctrl+Alt+T快速插入模块（try-catch等）
 Ctrl+Alt+V快速创建外部变量（try-catch等）
+Ctrl+Shift+F查找全部代码
+Ctrl+Shift+N查找类名
 Ctrl+Shift+F12快速调整区域
 Ctrl+Shift+Alt+？设置IDEA配置（自动热部署等）
 Ctrl+Shift+上下键对应行上下移动
