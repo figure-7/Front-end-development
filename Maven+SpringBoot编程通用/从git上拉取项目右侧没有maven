@@ -1,0 +1,2 @@
+原因：不识别当前是maven的项目
+解决：CtrlshiftN全局搜索，在action里面搜索maven，然后add maven project就可以自动导入了
