@@ -23,6 +23,7 @@ Ctrl+Alt+T快速插入模块（try-catch等）
 Ctrl+Alt+V快速创建外部变量（try-catch等）
 Ctrl+Shift+F查找全部代码
 Ctrl+Shift+N查找类名
+Ctrl+Shift+R将当前类或者全部类指定代码段进行替换
 Ctrl+Shift+F12快速调整区域
 Ctrl+Shift+Alt+？设置IDEA配置（自动热部署等）
 Ctrl+Shift+上下键对应行上下移动
