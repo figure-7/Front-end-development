@@ -1,0 +1,2 @@
+可能是Bitbucket(GitHub)长度密码改变了，而Windows凭证的密码海微原来的密码
+把Windows凭证的密码更新为Bitbucket(GitHub)上的密码即可

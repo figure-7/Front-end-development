@@ -1,0 +1,2 @@
+首先看Git配置的name和email是否和Bitbucket（GitHub）上面一致
+其次注意git commit -m后面的附加信息是否需要前缀
