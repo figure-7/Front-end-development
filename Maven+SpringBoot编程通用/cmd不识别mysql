@@ -1,0 +1,2 @@
+在mysql的bin目录下使用管理员权限打开cmd运行mysqld --install指令安装即可
+注意一定要是管理员权限。
