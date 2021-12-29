@@ -1,0 +1,5 @@
+使用telnet指令
+telnet的打开方式：控制面板-程序和功能-启用或关闭Windows功能里选择telnet客户端即可
+telnet IP(数据库IP) PORT(数据库端口)
+例如 telnet 10.171.1.248 1521
+之后回车显示一个光标在闪就表示连接成功
