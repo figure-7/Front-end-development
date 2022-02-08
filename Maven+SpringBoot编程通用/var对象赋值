@@ -1,0 +1,16 @@
+例如下面的复杂var类型对象：
+var datas = {
+      "all": { "name": "all", "code": []},
+      "001": { "name": "1", "code": ["1"]},
+      "002": { "name": "2", "code": ["2"]},
+      "003": { "name": "3", "code": ["3"]},
+      "004": { "name": "4", "code": ["4"]},
+      "005": { "name": "5", "code": ["5"]}
+};
+
+遍历的时候赋值（可以凭空赋值。这样会添加JX_NWCC属性如下）：
+for (var k in datas) {
+      datas[k].JX_NWCC = syq.JX_NWCC;
+      datas[k].JX_YWCC = syq.JX_YWCC;
+      datas[k].JX_RWCC = syq.JX_RWCC;
+}
