@@ -1,0 +1,3 @@
+<body style="overflow: scroll; width:1900px; height:900px">
+窗口长度在1900px以内会显示左右滚动条
+宽度在900px以内会显示上下滚动条
