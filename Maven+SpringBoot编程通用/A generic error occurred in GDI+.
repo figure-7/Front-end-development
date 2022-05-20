@@ -1,0 +1,54 @@
+ 测试发现是因为创建了Image对象未执行Dispose()方法释放，无法更改图像并保存回文件
+public static Bitmap AddText(string zimgPath, string fimgPath, int w1, int h1, int w2, int h2, string text1, string text2, string text3, string text4)
+        {
+            Image zimg = Image.FromFile(zimgPath);
+            Image fimg = CirclePhoto(Image.FromFile(fimgPath), w2);
+            //设置主图宽高
+            int width = Math.Max(w1, w2);
+            int heigth = h1 + h2;
+            int a1 = w1 / 2;
+            int a2 = w2 / 2;
+            if (a1 >= a2) a2 = a1 - a2;
+            else a1 = a2 - a1;
+            if (text1 == "") w1 += 200;
+            Bitmap bmp = new Bitmap(width + 200, heigth);
+            Graphics graph = Graphics.FromImage(bmp);
+            var fs = new PrivateFontCollection();
+            fs.AddFontFile(@"文件字体路径");//获取文件字体
+            //实例化字体
+            FontFamily fontFamily = fs.Families[0];
+            Font font1 = new Font(fontFamily, 12, GraphicsUnit.Pixel);
+            //设置图片文字位置
+            float x1 = width;
+            float x2 = width + 20;
+            float y1 = h1 / 2 - 10;
+            float y2 = h1 + h2 / 2 - 10;
+            float y3 = h1 / 2 + 10;
+            float y4 = h1 + h2 / 2 + 10;
+            float y5 = h1 / 2;
+            float y6 = h1 + h2 / 2;
+            //end
+            if (a1 >= a2) {
+                graph.DrawImage(zimg, 0, 0, w1, h1);
+                graph.DrawImage(fimg, a2, h1, w2, h2);
+            } else {
+                graph.DrawImage(zimg, a1, 0, w1, h1);
+                graph.DrawImage(fimg, 0, h1, w2, h2);
+            }
+            graph.DrawString(text1, font1, new SolidBrush(Color.Black), x2, y1);
+            graph.DrawString(text2, font1, new SolidBrush(Color.Black), x2, y2);
+            graph.DrawString(text3, font1, new SolidBrush(Color.Black), x2, y3);
+            graph.DrawString(text4, font1, new SolidBrush(Color.Black), x2, y4);
+            if (text1 != "") graph.DrawString("——", font1, new SolidBrush(Color.Black), x1, y5);
+            graph.DrawString("——", font1, new SolidBrush(Color.Black), x1, y6);
+            //不释放流会报错：A generic error occurred in GDI+.
+            graph.Dispose();
+            //原代码缺少下面两行
+            zimg.Dispose();
+            fimg.Dispose();
+            return bmp;
+        }
+
+解决方案：
+加上：zimg.Dispose();
+      fimg.Dispose();
