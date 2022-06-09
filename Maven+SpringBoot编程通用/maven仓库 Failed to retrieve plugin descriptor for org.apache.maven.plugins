@@ -1,0 +1,15 @@
+如果公司用的代理访问外网
+需要配置 maven/conf/setting.xml：
+
+<proxy>     
+ <active>true</active> 
+ <protocol>http</protocol> 
+
+<username>（个人电脑帐号）</username>
+ <password>（个人电脑帐号mi码）</password>
+ <host>(公司的代理服务器）</host> 
+ <port>（代理服务器的端口)</port> 
+ <nonProxyHosts>www.google.com|*.somewhere.com</nonProxyHosts> 
+ </proxy> 
+
+个人电脑账号和密码就是开机显示的账号和开机mi码
