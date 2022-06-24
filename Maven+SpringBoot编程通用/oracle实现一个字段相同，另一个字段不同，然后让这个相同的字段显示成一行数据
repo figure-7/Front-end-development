@@ -1,0 +1,32 @@
+该需求涉及到两个知识点：1、分析函数；2、行列转换。
+先讲实现
+第一步：建测试表
+create table COL_TO_ROW
+(
+  COL1 VARCHAR2(20),
+  COL2 VARCHAR2(20)
+)
+insert into col_to_row values('A','1');
+insert into col_to_row values('A','12');
+insert into col_to_row values('B','2');
+insert into col_to_row values('B','23');
+insert into col_to_row values('C','3');
+insert into col_to_row values('C','334');
+insert into col_to_row values('C','355')
+select * from COL_TO_ROW
+
+第二步：对表进行分组，组内编号1，2，3
+select col1,col2,row_number()over(partition by col1 order by col2)colnum from COL_TO_ROW
+
+第三步：行列转换，完成
+select col1,max(decode(colnum,1,col2,null))colA,max(decode(colnum,2,col2,null))colB,max(decode(colnum,3,col2,null))colC from (
+select col1,col2,row_number()over(partition by col1 order by col2)colnum from COL_TO_ROW 
+)group by col1
+
+再讲知识点
+1、row_number()over(partition by col1 order by col2)colnum
+通过col1字段进行分组，并组内编号
+row_number() over ([partition by col1] order by col2) ) as 别名
+表示根据col1分组，在分组内部根据 col2排序
+而这个“别名”的值就表示每组内部排序后的顺序编号（组内连续的唯一的）,[partition by col1] 可省略。关于该知识点的实例详解，可以进我空间看看：http://user.qzone.qq.com/362701082/blog/1322635025
+2、max(decode(colnum,1,col2,null))colA
