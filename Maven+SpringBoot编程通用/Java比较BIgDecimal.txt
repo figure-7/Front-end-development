@@ -1,0 +1,8 @@
+java中对bigdimical比较大小一般用的是bigdemical的compareTo方法
+int a = bigdemical.compareTo(bigdemical2)
+a = -1,表示bigdemical小于bigdemical2；
+a = 0,表示bigdemical等于bigdemical2；
+a = 1,表示bigdemical大于bigdemical2；
+例如具体业务代码：
+if(sysPartner.getCurrentAdvanceMoney().compareTo(new BigDecimal("0.00"))==0 ) {
+msg="此用户当前预付款为0";
