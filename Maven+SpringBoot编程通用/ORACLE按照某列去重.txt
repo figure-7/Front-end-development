@@ -1,0 +1,4 @@
+select a,b,c from (
+	select a,b,c,row_number() over (partition by a order by rownum) row_no from temp
+) where row_no = 1
+row_number() over(partition by 需要检索重复的列 order by 排序的列名)  别名 row_no  ，如果分组存在多条相同值，row_no 从1开始递增，筛选 row_no = 1 ，就取到了只出现一次的数据
