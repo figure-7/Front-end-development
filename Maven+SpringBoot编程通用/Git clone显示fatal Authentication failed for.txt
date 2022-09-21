@@ -1,0 +1,5 @@
+认证失败，先去网站上查看自己的个人用户名密码
+之后：
+git config --global user.name 用户名
+git config --global user.password 密码
+同时Windows凭据也做好配置即可
