@@ -1,0 +1,2 @@
+输入：
+npm install --legacy-peer-deps element-ui --save
