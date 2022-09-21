@@ -1,0 +1,10 @@
+需要查看是否要使用代理：
+获取代理：
+git config --global --get http.proxy
+git config --global --get https.proxy
+设置代理：
+git config --global http.proxy 10.22.35.21:8080
+git config --global https.proxy 10.22.35.21:8080
+删除代理：
+git config --global --unset http.proxy
+git config --global --unset https.proxy
