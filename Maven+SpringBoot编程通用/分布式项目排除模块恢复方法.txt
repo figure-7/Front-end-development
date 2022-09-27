@@ -1,0 +1,1 @@
+File->Project Structure->Modules添加上对应的项目，配置好属性即可
