@@ -1,0 +1,4 @@
+①git stash 先将本地修改存储起来
+②git pull 拉取远程
+③git stash pop 还原暂存内容
+之后手动解决冲突
