@@ -1,0 +1,7 @@
+Navicat中显示Px的为SQL流程，可将获取数据后执行对应函数操作后的数据入库
+函数内容需要使用PLSQL查看，PLSQL配置如下：
+双击打开后点击取消
+在配置->首选项中将oracle安装目录写到Oracle Home中，将oracle安装目录下的oci.dll写到OCI libarary中
+点击应用后点击确定
+重启后填入用户名密码和数据库（数据库填写格式：(IP:端口/数据库名)）
+点击确定自动识别，找到对象栏中的Java sources可以看到Px函数的内容
