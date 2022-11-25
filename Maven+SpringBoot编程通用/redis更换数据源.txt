@@ -1,0 +1,6 @@
+如果用的是Lettuce：
+        LettuceConnectionFactory jedisConnectionFactory = (LettuceConnectionFactory)redisTemplate.getConnectionFactory();
+        jedisConnectionFactory.setDatabase(db);
+        redisTemplate.setConnectionFactory(jedisConnectionFactory);
+        jedisConnectionFactory.afterPropertiesSet();
+其中db参数为更换的数据库名称
