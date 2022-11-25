@@ -1,0 +1,3 @@
+无法解析JSON对象，Redis中key对应value为JSON时，需要序列化获得
+加上：
+redisTemplate.setValueSerializer(stringSerializer );
