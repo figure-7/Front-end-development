@@ -1,0 +1,1 @@
+运行git remote prune origin后再重新git pull即可
