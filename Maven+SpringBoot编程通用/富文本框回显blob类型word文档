@@ -1,0 +1,22 @@
+1、先转成字节数组
+2、允许html中包含img标签,  img以base64的方式解析, 没图片可以注释掉
+3、字节数组转换为rtf字符串(UTF-8)
+4、rtf字符串直接返回给前台
+5、前台富文本框对应id接受即可(自动解析)
+just like this：
+后台：
+            SautinSoft.RtfToHtml rtfToHtml = new SautinSoft.RtfToHtml();
+            // 2. 允许html中包含img标签,  img以base64的方式解析, 没图片可以注释掉
+            rtfToHtml.ImageStyle.IncludeImageInHtml = true;
+            if (res.Count != 0)
+            {
+                Byte[] temp = res[0].ATTACHMENT_CONTENT;
+                // 3. 读取 rtf string
+                string rtfString = Encoding.UTF8.GetString(temp);
+                // 4. 将 rtf string 转换成 html string
+                string htmlString = rtfToHtml.ConvertString(rtfString);
+                htmlString = htmlString.Replace("The unlicensed version of &laquo;RTF to HTML .Net&raquo;.", "");
+                htmlString = htmlString.Replace("Get the full featured version!", "");
+                return new Result(0, htmlString);
+前台：(文本框id: #premiumskinsandicons-bootstrap)：
+                $("#premiumskinsandicons-bootstrap").val(_jkzh);
