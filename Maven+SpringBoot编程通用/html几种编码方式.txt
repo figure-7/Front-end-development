@@ -1,0 +1,2 @@
+encodeURI("URI编码");
+window.btoa("base64编码");
