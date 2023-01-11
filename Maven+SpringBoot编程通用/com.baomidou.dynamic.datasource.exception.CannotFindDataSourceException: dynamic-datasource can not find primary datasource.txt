@@ -1,0 +1,24 @@
+找不到主数据源：
+确认配置文件中配置了多个数据源且设定了主数据源,例如：
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    dynamic:
+      # 设置默认的数据源或者数据源组
+      primary: default
+      # 严格匹配数据源，默认false使用默认数据源，true未匹配到指定数据源时抛异常
+      strict: false
+      datasource:
+        default:
+          driver-class-name: oracle.jdbc.OracleDriver
+          url: jdbc:oracle:thin:XXX
+          username: XXX
+          password: XXX
+        userdb: # 用户数据库
+          driver-class-name: oracle.jdbc.OracleDriver
+          url: jdbc:oracle:thin:XXX
+          username: XXX
+          password: XXX
