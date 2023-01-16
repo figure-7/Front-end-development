@@ -1,0 +1,8 @@
+//获取当前时间
+		Timestamp timestamp0  = new Timestamp(System.currentTimeMillis());
+		Calendar c = Calendar.getInstance();
+		c.setTime(timestamp0);
+	    c.add(Calendar.DATE, 1);  //  加一  天
+	    //c.add(Calendar.MONTH, 1); //  加一个月
+		//c.add(Calendar.YEAR,1);   //  加一  年
+		Timestamp time1 = new Timestamp(c.getTimeInMillis());
