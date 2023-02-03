@@ -1,0 +1,2 @@
+项目未引入配置
+右边maven里，整个服务先运行clean，在运行compile即可
