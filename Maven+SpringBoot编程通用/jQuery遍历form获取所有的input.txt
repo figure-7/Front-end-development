@@ -1,0 +1,12 @@
+$("#form").find("input").each(function (value, index, array) {
+                    if (index.name == "ZM_NAME") {
+                        if ($(this).context.checked) {
+                            arr[i] = $(this).val();
+                        }
+                        i++;
+                    }
+                    console.log(index.name);
+                });
+
+其中index是input框的内容，index.name找到了input的id或者name为固定值的选框
+$(this).context.checked代表选中当前框，$(this).val()能够取得选框的值
