@@ -1,0 +1,2 @@
+Select CONVERT(varchar(MAX), convert(varbinary(MAX), CW)) From JP_GJL
+其中cw是image类型的文本
