@@ -1,0 +1,4 @@
+比如下面是要将某个表的字段恢复到2023-04-06 10:00:00时的样子，用主键匹配
+UPDATE 表名 t1
+SET t1.字段 = (SELECT 字段 FROM 表名 AS OF TIMESTAMP TO_TIMESTAMP('2023-04-06 10:00:00', 'YYYY-MM-DD HH24:MI:SS') t2 WHERE t1.主键 = t2.主键)
+WHERE 条件
