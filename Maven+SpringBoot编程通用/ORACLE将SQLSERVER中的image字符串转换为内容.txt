@@ -1,0 +1,4 @@
+它将SQL Server中的image类型字符串转换为Oracle中的varchar2类型，并跳过包含非法字符的数据：
+UPDATE 表
+SET 字段 = UTL_RAW.CAST_TO_VARCHAR2 ( CAST( CASE WHEN REGEXP_LIKE ( 字段, '^[0-9A-Fa-f]+$' ) THEN HEXTORAW( 字段 ) ELSE NULL END AS RAW ( 数据范围值 ) ) ) 
+WHERE 条件
