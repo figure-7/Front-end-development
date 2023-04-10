@@ -1,0 +1,4 @@
+方法后面.then(svgCode => {
+        console.log(svgCode)
+      })
+即可获得方法的返回值
