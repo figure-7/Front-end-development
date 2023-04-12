@@ -1,0 +1,3 @@
+lithsvg是图例的svg结构字符串
+lithsvg = lithsvg.replace('<svg', '<svg style="background-color:grey"');
+这样就可以把背景色设置为灰色
