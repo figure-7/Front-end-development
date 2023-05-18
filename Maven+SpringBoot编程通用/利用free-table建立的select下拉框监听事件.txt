@@ -1,0 +1,30 @@
+export const appManageFormFields = ({
+  remoteFilterHandler,
+  remoteChangeHandler,
+}) => {
+  return [{
+      label: getLanguageValue('common_plan_wellbore'),
+      prop: 'wellName',
+      type: 'select',
+      placeholder: getLanguageValue('common_input') + getLanguageValue('common_plan_wellbore'),
+      options: planWellBoreDropDownList,
+      props: {
+        remote: true,
+	  //使输入框可以用户手动输入
+        filterable: true,
+        style: { width: '100%' },
+	  //监听用户输入事件
+        filterMethod: (query) => {
+          remoteFilterHandler(query)
+        },
+      },
+	//监听用户下拉选择事件
+      event: {
+	  change: (value) => remoteChangeHandler(value),
+	},
+      rules: [{
+        trigger: 'blur', required: true, message: getLanguageValue('common_input') + getLanguageValue('common_plan_wellbore'),
+      }],
+    },
+
+另一个文件中直接初始化实例，并编写两个函数内容即可
