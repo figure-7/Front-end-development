@@ -1,4 +1,0 @@
-<ul id="EQ_NAME_TREE" lay-search="" class="dtree" data-id="0"></ul>
-赋值：
-$("#EQ_NAME_TREE_select_input_id").val(obj.data.EQ_NAME)
-EQ_NAME_TREE为ul标签的id
