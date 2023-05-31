@@ -1,0 +1,3 @@
+document.getElementById('EQ_SPECMODEL').selectedIndex = 1
+EQ_SPECMODEL为select标签的id属性
+这样默认显示符合条件的第一条
