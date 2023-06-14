@@ -1,0 +1,3 @@
+例如8009被占用了
+netstat -aon|findstr "8009" 查看占用进程号
+taskkill /T /F /PID 进程号 结束当前端口进程占用
