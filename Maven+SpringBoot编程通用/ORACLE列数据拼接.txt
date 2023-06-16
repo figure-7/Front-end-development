@@ -1,0 +1,2 @@
+listagg(字段名)
+注意后面要有GROUP BY
