@@ -1,0 +1,2 @@
+git reset --hard origin/分支名
+强行将本地代码修改为远程仓库版本
