@@ -1,0 +1,2 @@
+注意初始化的时候为true：
+useTableHeight(tableBody, '.key-well-track-table', true, 60);
