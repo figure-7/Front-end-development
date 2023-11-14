@@ -1,0 +1,13 @@
+假设字段名为a，按照指定内容：'集''处''地''正'和其他，排序
+ORDER BY
+CASE
+		a
+		WHEN '集' THEN
+		0 
+		WHEN '处' THEN
+		1 
+		WHEN '地' THEN
+		2 
+		WHEN '正' THEN
+		3 ELSE 4 
+	END ASC
