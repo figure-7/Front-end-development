@@ -1,0 +1,20 @@
+比如下面的right-well-list的class会覆盖layer-correlation，设置z-index的值并且保证全部拥有position: absolute属性，之后大的z-index会显示在上方
+.layer-correlation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -20px;
+  z-index:1;
+}
+.right-well-list {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  z-index:100;
+
+  .adjacent-well-list {
+    height: 100%;
+  }
+}
