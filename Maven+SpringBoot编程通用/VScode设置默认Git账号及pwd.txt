@@ -1,0 +1,3 @@
+打开终端分别输入：
+git config --global user.name "用户名"
+git config --global credential.helper store
